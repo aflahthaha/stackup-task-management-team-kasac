@@ -2,7 +2,13 @@
   "name": "<todo-react",
   "version": "1.0.0",
   <strong>"scripts"</strong>: {
-    "start": "react-scripts start"
+    
+  "start": "react-scripts start",
+  "build": "react-scripts build",
+  "test": "react-scripts test",
+  "eject": "react-scripts eject"
+
+
   }
   <strong>"scripts"</strong>: {
     "dev" : "node dev.js"
