@@ -47,16 +47,17 @@ class App extends Component {
   }
 
   editItem = (index) => {
-    const todos = [...this.state.list];
-    const editedTodo = prompt("Edit the todo:");
-    if (editedTodo !== null && editedTodo.trim() !== "") {
-      let updatedTodos = [...todos];
-      updatedTodos[index].value = editedTodo;
-      this.setState({
-        list: updatedTodos,
-      });
-    }
-  };
+  const todos = [...this.state.list];
+  const editedTodo = prompt("Edit the todo:");
+  if (editedTodo !== null && editedTodo.trim() !== "") {
+    let updatedTodos = [...todos];
+    updatedTodos[index].value = editedTodo;
+    this.setState({
+      list: updatedTodos,
+    });
+  }
+};
+
 
   render() {
     return (
